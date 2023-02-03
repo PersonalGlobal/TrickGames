@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricks Games Multiplayer</title>
+    <!-- adding style file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Seccion Title -->
+    <section id="title">
+        <h1> Trick Games Multiplayer </h1>
+        <h3>Piedra ✊, Papel ✋, Tijeras ✌ game</h6>
+    </section>
+
+    <!-- Seccion Player -->
+    <section id="select-player">
+        <h4>Seleccione su avatar</h4>
+        <div id="avatars">
+            <input type="radio" name="avatar" id="avatar" >
+            <label for="avatar" > avatar </label>
+            <input type="radio" name="avatar" id="avatar2" >
+            <label for="avatar2" > avatar </label>
+            <input type="radio" name="avatar" id="avatar2" >
+            <label for="avatar2" > avatar </label>
+        </div>
+        <div id="player-data">
+            <h4>Escriba su nickname</h4>
+            <input type="text" placeholder="Nickname" id="nickname">
+        </div>
+        <button> Jugar </button>
+    </section>
+
+    <!-- section map -->
+    <section id="game-map">
+        <h4>Mundo Trick </h4>
+        <canvas id="map" width="350" height="200" style="background-color:bisque;">
+
+        </canvas>
+
+        <div id="move-controls">
+            <button> Arriba </button>
+            <button> Izquierda </button>
+            <button> Abajo </button> 
+            <button> Derecha</button>
+            
+        </div>
+    </section>
+
+    <!-- section game -->
+    <section id="game-dashboard">
+        <h4>Selecciona tus ataques</h4>
+        <div id="ataques">
+            <input type="radio" name="ataque" id="ataque" >
+            <label for="ataque" > avatar </label>
+            <input type="radio" name="ataque" id="ataque2" >
+            <label for="ataque2" > avatar </label>
+            <input type="radio" name="ataque" id="ataque3" >
+            <label for="ataque3" > avatar </label>
+        </div>
+        <section id="result-game">
+            Yo 3
+            Enemigo 3 
+        </section>
+    </section>
+    <!-- adding a js file  -->
+    <script src="logic.js"></script>
+</body>
+</html>
