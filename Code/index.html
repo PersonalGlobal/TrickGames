@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Seccion Title -->
+    <div class="container-game">
+        <!-- Seccion Title -->
     <section id="title">
         <h1> Trick Games Multiplayer </h1>
         <h3>Piedra ✊, Papel ✋, Tijeras ✌ game</h6>
@@ -17,6 +18,10 @@
 
     <!-- Seccion Player -->
     <section id="select-player">
+        <div id="player-data">
+            <p class="subtitle">Escriba su nickname</p>
+            <input type="text" placeholder="Nickname" id="nickname">
+        </div>
         <h4>Seleccione su avatar</h4>
         <div id="avatars">
             <input type="radio" name="avatar" id="avatar" >
@@ -25,10 +30,6 @@
             <label for="avatar2" > avatar </label>
             <input type="radio" name="avatar" id="avatar2" >
             <label for="avatar2" > avatar </label>
-        </div>
-        <div id="player-data">
-            <h4>Escriba su nickname</h4>
-            <input type="text" placeholder="Nickname" id="nickname">
         </div>
         <button> Jugar </button>
     </section>
@@ -67,5 +68,6 @@
     </section>
     <!-- adding a js file  -->
     <script src="logic.js"></script>
+    </div>
 </body>
 </html>
